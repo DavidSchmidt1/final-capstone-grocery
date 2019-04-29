@@ -1,18 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\app",
-    "\\src\\app\\about",
-    "\\src\\app\\cart",
-    "\\src\\app\\contact",
-    "\\src\\app\\footer",
-    "\\src\\app\\header",
-    "\\src\\app\\home",
-    "\\src\\app\\service",
-    "\\src\\app\\shop",
-    "\\src\\assets"
+    "\\e2e",
+    "\\e2e\\src"
   ],
-  "SelectedNode": "\\src\\app\\contact\\contact.component.html",
+  "SelectedNode": "\\e2e\\src\\app.po.ts",
   "PreviewInSolutionExplorer": false
 }
