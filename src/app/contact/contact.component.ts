@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 })
 export class ContactComponent implements OnInit {
 
-  test: any;
+  
   constructor() { }
 
 
