@@ -18,9 +18,8 @@ const routes: Routes = [
   { path: '#/shopping', component: ShopComponent }, /* rubric34 */
   { path: '#/contact', component: ContactComponent }, /*rubric62*/
   { path: '#/about', component: AboutComponent }, /*rubric64 */
-  { path: '#/shopping/product/:name', component: ShopProductComponent }  /*rubric46*/
-  //{ path: 'map', component: MapComponent },
-  //{ path: '', component: OrderComponent },
+  { path: '#/shopping/product/:name', component: ShopProductComponent },  /*rubric46*/
+  { path: '**', redirectTo: '#' }
 ];
 
 @NgModule({
