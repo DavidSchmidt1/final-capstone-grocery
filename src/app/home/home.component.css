@@ -1,0 +1,16 @@
+.welcome {
+     font-size:40px;
+
+
+}
+.container{
+  padding-top:40px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+  display:none;
+  background-color:red ;
+}
+.shopbtn {
+  padding-top: 130px;
+}

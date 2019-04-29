@@ -1,0 +1,6 @@
+.page-footer {
+  position: -webkit-sticky;
+  position: sticky !important; /*rubric72*/
+  bottom: 0px; /*rubric72*/
+  z-index: 1020;
+}

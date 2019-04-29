@@ -1,0 +1,25 @@
+<div class="container product-container">
+  <div class="row go-back">
+    <button class="btn btn-primary btn-lg" (click)='Back($event)'>< Go Back</button>  <!-- rubric43 --> <!-- rubric45 -->
+  </div>
+  <div class="row ">
+    <div class="col-md-6 text-center">
+      <img alt="" [src]="product.imagelink">       <!-- rubric36 -->
+    </div>
+
+    <div class="col-md-6 text-center">
+      <h2>{{ product.name }}</h2>                      <!-- rubric35 -->
+      <h3>Rating: {{ product.rating }} / 5</h3>             <!-- rubric37 -->
+      <p>Stock: {{product.stock }}</p>                <!-- rubric38 -->
+      <p>{{ product.price }} €</p>                       <!-- rubric39 -->
+      <p><em>{{ product.description }}</em></p>                    <!-- rubric40 -->
+      <p>
+        Qty:
+        <input max="{{ product.stock }}" value="1">     <!-- rubric42 -->
+        <span ></span>
+      </p>
+      <p><button class="btn btn-primary" >Add</button></p>   <!-- rubric41 -->
+
+    </div>
+  </div>
+</div>

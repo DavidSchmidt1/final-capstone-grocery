@@ -1,0 +1,26 @@
+.background1 {
+  background-image: url("..\..\assets\images\family.jpg");
+  padding:400px;
+  text-align:center;
+}
+.background2 {
+  background-image: url("..\..\assets\images\grocery-store.jpg");
+  padding: 400px;
+  text-align: center;
+}
+.background3 {
+  background-image: url("..\..\assets\images\shopping.jpg");
+  padding: 400px;
+  text-align: center;
+}
+.placeholder{
+
+  padding: 100px;
+
+}
+.text {
+  font-size: 40px;
+}
+.right{
+  float:right;
+}

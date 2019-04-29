@@ -1,0 +1,144 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3 ">
+    </div>
+    <div class="col ">
+      <div class="welcome">
+        Welcome to the Grocery-Shop of the Hearts. We have everything you might want!
+        <!-- rubric04 -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container d-flex align-items-center justify-content-center align-items-center">
+
+  <div class="row">
+    <div class="col">
+      <!--<ngb-carousel >
+        <ng-template ngbSlide>
+          <a href="1"><img src="/assets/images/pic1.png"></a>
+          <br />
+          <div class="carousel-caption">
+            <h3>Slide 1</h3>
+          </div>
+          <a href="2"><img src="/assets/images/pic1.png"></a>
+          <a href="3"><img src="/assets/images/pic1.png"></a>
+        </ng-template>
+        <ng-template ngbSlide>
+          <a href="1"><img src="/assets/images/pic2.png"></a>
+          <br />
+          <a href="2"><img src="/assets/images/pic2.png"></a>
+          <div class="carousel-caption">
+            <h3>Slide 2</h3>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <a href="1"><img src="/assets/images/pic2.png"></a>
+          <br /><br />
+          <a href="2"><img src="/assets/images/pic2.png"></a>
+          <div class="carousel-caption">
+            <h3>Slide 3</h3>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <a href="1"><img src="/assets/images/pic2.png"></a>
+          <br /><br />
+          <a href="2"><img src="/assets/images/pic2.png"></a>
+          <a href="2"><img src="/assets/images/pic2.png"></a>
+          <div class="carousel-caption">
+            <h3>Slide 4</h3>
+          </div>
+        </ng-template>
+      </ngb-carousel>-->
+      <mdb-carousel class="carousel slide" [animation]="'slide'" [interval]="'300'">
+        <!--rubric11-->
+        <!-- rubric02 rubric07 (Controls isn't false so arrows get created)-->
+        <!-- rubric03 rubric08 (Controls isn't false so arrows get created)-->
+       
+        <mdb-carousel-item>
+          <a href="#/shopping/product/{{categoriesdata[0].subcategories[0].items[0].name}}" class="view w-100"> <!--rubric09-->
+            <div class="view w-100">
+
+              <img class="d-block w-100" src="{{categoriesdata[0].subcategories[0].items[0].imagelink}}" alt="Second slide">         <!-- rubric01 -->
+
+              <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+            </div>
+          </a>
+          <a href="#/shopping/product/{{categoriesdata[0].subcategories[0].items[1].name}}" class="view w-100"> <!--rubric09-->
+            <div class="view w-100">
+
+              <img class="d-block w-100" src="{{categoriesdata[0].subcategories[0].items[1].imagelink}}" alt="Second slide">         <!-- rubric01 -->
+
+              <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+            </div>
+          </a>
+          <a href="#/shopping/product/{{categoriesdata[0].subcategories[0].items[2].name}}" class="view w-100"> <!--rubric09-->
+            <div class="view w-100">
+
+              <img class="d-block w-100" src="{{categoriesdata[0].subcategories[0].items[2].imagelink}}" alt="Second slide">         <!--rubric01-->
+
+              <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+            </div>
+          </a>
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <a href="#/shopping/product/{{categoriesdata[1].subcategories[0].items[0].name}}" class="view w-100"> <!--rubric09-->
+          <div class="view w-100">
+
+              <img class="d-block w-100" src="{{categoriesdata[1].subcategories[0].items[0].imagelink}}" alt="Second slide">             <!--rubric01-->
+
+              <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+            </div>
+          </a>
+
+        </mdb-carousel-item>
+
+
+        <mdb-carousel-item>
+          <a href="#/shopping/product/{{categoriesdata[2].subcategories[0].items[0].name}}" class="view w-100">  <!--rubric09-->
+
+            <div class="view w-100">
+              <img class="d-block w-100" src="{{categoriesdata[2].subcategories[0].items[0].imagelink}}" alt="Second slide">           <!--rubric01-->
+
+              <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+            </div>
+          </a>
+          <a href="#/shopping/product/{{categoriesdata[2].subcategories[0].items[2].name}}" class="view w-100"> <!--rubric09-->            <div class="view w-100">
+
+              <img class="d-block w-100" src="{{categoriesdata[2].subcategories[0].items[2].imagelink}}" alt="Second slide">             <!--rubric01-->
+
+              <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+            </div>
+          </a>
+        </mdb-carousel-item>
+      </mdb-carousel>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row justify-content-center">
+
+
+    
+      <div class="col-2">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Toggle Slide Show                  <!-- rubric06 -->
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container shopbtn">
+  <div class="row justify-content-center">
+    <div class="col-2 ">
+      <a class="btn btn-dark" href="#/shopping" role="button">Shop All</a> <!-- rubric05 -->
+
+    </div>
+   
+  </div>
+</div>
