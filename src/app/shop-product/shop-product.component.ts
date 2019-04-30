@@ -15,8 +15,9 @@ import { Location } from '@angular/common';
 })
 export class ShopProductComponent implements OnInit {
 
-
+  private sub: any;
   public id: any;
+  public allProducts: any;
   public product: any;
   public current: any;
   public name: string;
@@ -34,17 +35,23 @@ export class ShopProductComponent implements OnInit {
       this.categoriesdata = value[0].subcategories[0].items[0];
 
       this.product = this.categoriesdata;
-      this.router.events.subscribe((event: Event) => {
-        if (!!event && event instanceof RoutesRecognized) {
-          this.param = event.state.root.firstChild.params;
-
-          console.log('Query params are', this.param)
-          
-          
-        }
-      });
+      this.allProducts = value;
+      
 
     });
+    this.sub = this.route.params.subscribe(params => {
+      this.param = params.name;
+
+    });
+    //for (var i = 0; i < 5; i++) {
+    //  for (var x = 0; x < 6; x++) {
+    //    for (var y = 0; y < 15; y++) {
+    //      if (this.allProducts[i].subcategories[i].items[i].name == this.param) {
+    //        this.product = this.allProducts[i].subcategories[i].items[i]
+    //      }
+    //    }
+    //  }
+    //}
     
   }
 
@@ -57,6 +64,9 @@ export class ShopProductComponent implements OnInit {
     
    
     
+  }
+  ngOnDestroy() {
+    this.sub.unsubscribe();
   }
  
  

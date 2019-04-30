@@ -16,7 +16,7 @@ export class CartComponent implements OnInit {
     this.data.getData().subscribe((value: Categories) => {
       this.categoriesdata = value;
     });
-    $("#checkout").on("click", function () {             /*rubric60*/
+    $("#checkout").on("click", function () {             /*rubric51*/
       alert("Shipping details: free;  Total cost: 0€")
 
     }) 
