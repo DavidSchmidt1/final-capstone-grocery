@@ -12,7 +12,7 @@
           <th class="col-md-2">Remove</th>
         </tr>
         <tr *ngFor="let productData of categoriesdata; let i=index" class="row">
-          <td class="col-md-2"><img [src]="categoriesdata[i].subcategories[i].items.imageLink" alt=""></td>
+          <td class="col-md-2"><img [src]="categoriesdata[i].subcategories[i].items[i].imageLink" alt=""></td>
           <td class="col-md-2"></td>
           <td class="col-md-2"></td>
           <td class="col-md-2">

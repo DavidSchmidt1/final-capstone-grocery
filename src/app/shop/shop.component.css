@@ -17,9 +17,7 @@
 .strong {
   font-weight: bold;
 }
-.category-ul {
-  padding-left: 0;
-}
+
 
 .controlls{
   padding-top:30px;
@@ -32,7 +30,7 @@
   display: block;
 }
 
-.image-box {
+.box {
   margin-bottom: 50px;
 }
 
@@ -56,7 +54,7 @@
 }
 
 .product-name {
-  color: #007bff;
+  
   min-height: 50px;
 }
 
