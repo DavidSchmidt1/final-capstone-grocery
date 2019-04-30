@@ -36,22 +36,30 @@ export class ShopProductComponent implements OnInit {
 
       this.product = this.categoriesdata;
       this.allProducts = value;
-      
-
+    
+      try {
+        for (var i = 0; i < Object.keys(this.allProducts).length; i++) {
+         
+          for (var x = 0; x < Object.keys(this.allProducts[i].subcategories).length; x++) {
+            for (var y = 0; y < Object.keys(this.allProducts[i].subcategories[x].items).length; y++) {
+                if (this.allProducts[i].subcategories[x].items[y].name == this.param) {
+                  this.product = this.allProducts[i].subcategories[x].items[y];
+                }
+              }
+            }
+          
+        }
+      } catch (exeption) {
+        console.log(exeption);
+      }
     });
+    
     this.sub = this.route.params.subscribe(params => {
       this.param = params.name;
+     
 
     });
-    //for (var i = 0; i < 5; i++) {
-    //  for (var x = 0; x < 6; x++) {
-    //    for (var y = 0; y < 15; y++) {
-    //      if (this.allProducts[i].subcategories[i].items[i].name == this.param) {
-    //        this.product = this.allProducts[i].subcategories[i].items[i]
-    //      }
-    //    }
-    //  }
-    //}
+    
     
   }
 

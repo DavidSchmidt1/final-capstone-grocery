@@ -11,13 +11,11 @@
           <th class="col-md-2">Cost</th>
           <th class="col-md-2">Remove</th>
         </tr>
-        <tr *ngFor="let productData of categoriesdata; let i=index" class="row">
-          <td class="col-md-2"><img [src]="categoriesdata[i].subcategories[i].items[i].imageLink" alt=""></td>
-          <td class="col-md-2"></td>
-          <td class="col-md-2"></td>
-          <td class="col-md-2">
-            
-          </td>
+        <tr *ngFor="let productData of allItems; let i=index" class="row">
+          <td class="col-md-2"><img [src]="productData.imageLink" alt=""></td>
+          <td class="col-md-2">Name: {{productData.name}}</td>
+          <td class="col-md-2">Rating: {{productData.rating}} / 5</td>
+          <td class="col-md-2">Stock: {{productData.stock}}</td>
           <td class="col-md-2"></td>
           <td class="col-md-2"><button class="btn btn-default" >X</button></td>
         </tr>

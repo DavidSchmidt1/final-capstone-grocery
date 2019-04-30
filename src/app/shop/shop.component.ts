@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Categories } from '../models/categories';
 import { GetdataService } from '../service/getdataservice.service';
+import { CartService } from '../service/cart.service';
 
 @Component({
   selector: 'app-shop',
@@ -13,7 +14,7 @@ export  class ShopComponent implements OnInit {
   currentcat: number;
   currentsubcat:number;
   public show: boolean = false;
-  constructor(public data: GetdataService) {
+  constructor(public data: GetdataService, public cart: CartService) {
   }
   ngOnInit() {
     this.data.getData().subscribe((value: Categories) => {
@@ -39,6 +40,9 @@ export  class ShopComponent implements OnInit {
   counter(i:number,j:number) {
     this.currentcat = i;
     this.currentsubcat = j;
+  }
+  addtoCart(name:string) {
+    this.cart.SetNewItem(name);
   }
 }
 
